@@ -13,6 +13,7 @@ public class TC_002_Verify_User_is_able_to_delete_address_or_not_Test extends Ba
 	
 	@Test
 	public void deleteAddress() throws InterruptedException, EncryptedDocumentException, IOException  {
+		System.out.println("Started executing deleteAddress");
 		Thread.sleep(2000);
 		webDriverUtility.javaScriptScrollToElement(driver, homepage.getAddressesBtn());
 		homepage.getAddressesBtn().click();
